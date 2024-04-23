@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Container from "@mui/material/Container";
 import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
 
@@ -15,8 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} `}>
         <Header />
-
-        {children}
+        <Container maxWidth="xl">{children}</Container>
         <Footer />
       </body>
     </html>

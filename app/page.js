@@ -1,6 +1,10 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
-  return <main className={styles.main}></main>;
+  return (
+    <main className="mainContent">
+      <h1>Welcome to the Pokemon Hub!</h1>
+    </main>
+  );
 }
